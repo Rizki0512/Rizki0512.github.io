@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transaksi</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Transaksi</h1>
+    <nav>
+      <ul>
+        <li><a href="Index.html">Halaman Utama</a></li>
+        <li><a href="Kebudayaan.html">Kebudayaan Indonesia</a></li>
+        <li><a href="Wisata.html">Tempat Wisata Terbaik</a></li>
+        <li><a href="Hotel.html">Daftar Hotel Favorit</a></li>
+        <li><a href="Aboutme.html">About Me</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Formulir Transaksi</h2>
+      <form id="transactionForm" action="submit.php" method="POST">
+        <label for="nama">Nama Lengkap:</label><br>
+        <input type="text" id="nama" name="nama" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="telepon">Nomor Telepon:</label><br>
+        <input type="tel" id="telepon" name="telepon" required><br><br>
+
+        <label for="pilihan">Pilihan:</label><br>
+        <select id="pilihan" name="pilihan" required>
+          <option value="">Pilih jenis transaksi...</option>
+          <option value="hotel">Pemesanan Hotel</option>
+          <option value="wisata">Pemesanan Tiket Wisata</option>
+        </select><br><br>
+
+        <label for="pesan">Pesan Tambahan:</label><br>
+        <textarea id="pesan" name="pesan" rows="4"></textarea><br><br>
+
+        <button type="submit">Kirim</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Muhammad Rizki Ramadhan_211011450503. All rights reserved.</p>
+  </footer>
+</body>
+</html>
